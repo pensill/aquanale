@@ -12,9 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
-
- <!--  <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+  <!--  <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -31,10 +29,10 @@
         <div class="mobile-menu__btn"></div>
         <nav class="main-nav">
           <ul clas="main-nav__list">
-            <li class="main-nav__item"><a href="#model">Преимущества</a></li>
-            <li class="main-nav__item"><a href="#about">Услуги</a></li>
-            <li class="main-nav__item"><a href="#charact">О нас</a></li>
-            <li class="main-nav__item"><a href="#feedback">Контакты</a></li>
+            <li class="main-nav__item"><a href="#advantages">Преимущества</a></li>
+            <li class="main-nav__item"><a href="#services">Услуги</a></li>
+            <li class="main-nav__item"><a href="#about">О нас</a></li>
+            <li class="main-nav__item"><a href="#contact">Контакты</a></li>
           </ul>
         </nav>           
       </div>
@@ -43,7 +41,7 @@
           <p class="">с 10:00 до 19:00</p>
           <a href="tel:">+7 (495) 970 26 69</a>
         </div>
-        <a href="#" class="btn_light">ПЕРЕЗВОНИТЬ МНЕ</a>   
+        <a href="#myModal" class="btn_light" data-toggle="modal">ПЕРЕЗВОНИТЬ МНЕ</a>
       </div>
     </div>
   </div> <!-- container end -->
@@ -51,27 +49,31 @@
 
 <main>
 
-  <section class="present">
+  <section class="present" id="present">
     <div class="container present-container">
       <div class="row">
         <h1>Официальный сервисный центр продукции <span>ZODIAC</span></h1>
-        <a class="btn-button"></a>
+        <a href="#video" class="btn-button"></a>
       </div>
     </div>
   </section>
 
-  <section class="video">
+  <section class="video" id="video">
     <div class="container video-container">
       <div class="row">
         <div class="video-content">
           <a class="btn-play"></a>
           <p>Смотреть видео</p>
+          <div class="video-player">
+            <iframe width="959" height="417" src="https://www.youtube.com/embed/aZaAeWhxJiU" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          
         </div>
       </div>
     </div>
   </section> 
 
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container advantages-container">
       <div class="row">
         <h3 class="sub-title">Почему мы?</h3>
@@ -114,7 +116,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container services-container">
       <div class="row">
         <h3 class="sub-title">Что мы можем?</h3>
@@ -171,7 +173,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container about-container">
       <div class="row">
         <h3 class="sub-title">кто мы?</h3>
@@ -201,7 +203,7 @@
     </div>
   </section>
 
-  <section class="feedback">
+  <section class="feedback" id="contact">
     <div class="container about-container">
       <div class="row">
         <h3 class="sub-title">Есть вопросы?</h3>
@@ -223,7 +225,7 @@
           <label>Электронная почта</label>
           <input type="" name="" placeholder="Info@mail.ru">
         </div>
-        <a href="#"class="btn-blue">ПЕРЕЗВОНИТЬ МНЕ</a>
+        <a href="#" class="btn-blue">ПЕРЕЗВОНИТЬ МНЕ</a>
         <div class="btn-blue__after"></div>
       </form>
       <p class="form-title">Или свяжитесь с нам сами</p>
@@ -234,14 +236,32 @@
     </div>
   </section>
 </main>
-   <!--  Modal HTML
+   
    <div id="myModal" class="modal fade">
        <div class="modal-dialog">
            <div class="modal-content">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/aZaAeWhxJiU" frameborder="0" allowfullscreen></iframe>
+               <form>
+                  <p class="form-title">Оставьте заявку, мы перезвоним Вам и ответим на все вопросы!</p>
+                  <div class="input-container">
+                    <label>Как Вас зовут?</label>
+                    <input type="" name="" placeholder="Иван Иванович">
+                  </div>
+                  <div class="input-container">
+                    <label>Ваш телефон</label>
+                    <input class="input-small" type="" name="" placeholder="+7">
+                    <input class="input-small" type="" name="" placeholder="495">
+                    <input class="input-medium" type="" name="" placeholder="1234567">
+                  </div>
+                  <div class="input-container input-container__last">
+                    <label>Электронная почта</label>
+                    <input type="" name="" placeholder="Info@mail.ru">
+                  </div>
+                  <a href="#" class="btn-blue">ПЕРЕЗВОНИТЬ МНЕ</a>
+                  <div class="btn-blue__after"></div>
+                </form>
            </div>
        </div>
-   </div> -->
+   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

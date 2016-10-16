@@ -12,9 +12,11 @@ body{
 a{
   outline: none;
 }
-a:hover{
-  text-decoration: none;
+a:hover, a:focus, a:active{
+  text-decoration: none;3
+  outline:none;
 }
+
 body{
   background: #000d1c;
 }
@@ -72,7 +74,7 @@ h1{
   display: inline-block;
 }
 .header-page__menu{
-  margin-right: 115px;
+  margin-right: 138px;
 }
 .main-nav__list{
   list-style: none;
@@ -107,6 +109,10 @@ h1{
   font-size: 20px;
   font-weight: 600;
 }
+.contacts a:hover, .contacts a:focus{
+  text-decoration: none;
+  color: white;
+} 
 .btn_light{
   color: white;
   font-family: "Open Sans";
@@ -118,6 +124,10 @@ h1{
   line-height: 42px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.btn_light:hover, .btn_light:focus, .btn_light:active{
+  color: white;
+  outline:none;
 }
 h1 span{
   color: #fff500;
@@ -142,12 +152,27 @@ h1 span{
   background-repeat: no-repeat;
   background-position: center;
 }
+.present-container{
+  position: relative;
+}
+.btn-button{
+  background: url(../img/bottom.png);
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 41px;
+  margin: 0 auto;
+  top: 693px;
+  left: 580px;
+}
 /* PRESENT END*/
 
 
 /* VIDEO */
 .video{
   background: url(../img/second-block-bg.png);
+  position: relative;
+  background-position: center center;
 }
 .btn-play{
   background: url(../img/play.png);
@@ -158,12 +183,25 @@ h1 span{
   margin-top: 245px;
   cursor: pointer;
 }
+.video-content{
+  position: relative;
+}
 .video-content p{
   color: white;
   font-family: "Open Sans";
   font-size: 18px;
   text-align: center;
   margin-bottom: 184px;
+  
+}
+.video-player{
+  display: none;
+  position: absolute;
+  top: -85px;
+  left: 111px;
+}
+.video-player.show{
+  display: block;
 }
 /* VIDEO END*/
 
@@ -530,9 +568,9 @@ input{
 }
 .strip{
   height: 1px;
-background-color: #162833;
-width: 100%;
-margin-bottom: 35px;
+  background-color: #162833;
+  width: 100%;
+  margin-bottom: 35px;
 }
 .copyright{
   display: block;
@@ -544,8 +582,104 @@ margin-bottom: 35px;
   margin-bottom: 100px;
       text-align: center;
 }
-
-
-
-
 /* feedback END*/
+
+/* MODAL */
+.modal-content{
+  background: #000d1c;
+  padding-top: 20px;
+}
+.modal-content form, .modal-content form label{
+  text-align: center;
+}
+.modal-content .input-container{
+  margin-right: 0;
+}
+/* MODAL END*/
+
+
+@media screen and (max-width: 1200px){
+  .header-page .header-page__logo{
+    display: block;
+    margin: 0 auto;
+    width: 192px;
+  }
+  .header-page{
+    margin-top: 20px;
+  }
+  .header-page__menu{
+    display: block;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .header-page__contact{
+    display: block;
+    text-align: center;
+    width: 356px;
+    margin: 0 auto;
+  }
+  h1{
+    width: auto;
+  }
+  .btn-button{
+    display: none;
+  }
+  .video-player{
+    left: 0px;
+    width: 100%;
+  }
+  .video-player iframe{
+    width: 100%;
+  }
+  .advantages-item__img{
+    margin-bottom: 8px;
+  }
+  .advantages-item h4{
+    margin-bottom: 45px;
+  }
+  .advantages-item p {
+    margin-bottom: 13px;
+  }
+  .advantages-item h3 {
+    margin-bottom: 13px;
+  }
+
+
+  .services-item__number{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .services-repairs .services-item__text{
+    position: inherit;
+    text-align: center;
+  }
+  .services-spares .services-item__number{
+    position: inherit;
+    text-align: center;
+    left: 0;
+  }
+  .services-spares .services-item__text{
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .services-item__number{
+    left: 0px !important;
+    text-align: center;
+  }
+  .services-item__text{
+    left: 0px !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-bg {
+    left: 0px;
+    top: -180px;
+    width: 100%;
+  }
+
+
+  .about-text .secont-p{
+    width: auto;
+  }
+}

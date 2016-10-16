@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.main-nav__item a[href*="#"]').bind("click", function(e){
+  $('a[href*="#"]').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
        scrollTop: $(anchor.attr('href')).offset().top
@@ -16,4 +16,10 @@ $(document).ready(function(){
      return false;
   });
 
+
+  $('.btn-play').click(function() {
+    console.log('efds');
+    $('.video-player').toggleClass('show');
+    return false;
+  });
 });
