@@ -22,4 +22,15 @@ $(document).ready(function(){
     $('.video-player').toggleClass('show');
     return false;
   });
+
+
+
+
+
+  setTimeout(function() {
+    $('body').css('height', "auto");
+    $('section').css('display', "block");
+    $('.preloader').css('top', '-1000px');
+  }, 2000);
+
 });
