@@ -9,10 +9,10 @@ $(document).ready(function(){
   });
 
 
-  var hamburger = $('#hamburger-icon');
+  var hamburger = $('.mobile-menu__btn');
   hamburger.click(function() {
      hamburger.toggleClass('active');
-     $('.main-nav ul').toggleClass('show');
+     $('.main-nav').toggleClass('show');
      return false;
   });
 

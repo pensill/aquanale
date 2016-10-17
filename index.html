@@ -26,7 +26,11 @@
         </a>
       </div>
       <div class="header-page__menu">
-        <div class="mobile-menu__btn"></div>
+        <div class="mobile-menu__btn">
+          <div class="hamburger-item"></div>
+          <div class="hamburger-item"></div>
+          <div class="hamburger-item"></div>
+        </div>
         <nav class="main-nav">
           <ul clas="main-nav__list">
             <li class="main-nav__item"><a href="#advantages">Преимущества</a></li>
@@ -41,7 +45,7 @@
           <p class="">с 10:00 до 19:00</p>
           <a href="tel:">+7 (495) 970 26 69</a>
         </div>
-        <a href="#myModal" class="btn_light" data-toggle="modal">ПЕРЕЗВОНИТЬ МНЕ</a>
+        <a href="#contact" class="btn_light" >ПЕРЕЗВОНИТЬ МНЕ</a>
       </div>
     </div>
   </div> <!-- container end -->
@@ -80,7 +84,7 @@
         <h2 class="section-title">Наши преимущества</h2>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="advantages-item advantages-item--garant">
             <div class="advantages-item__img"></div>
             <p>...</p>
@@ -88,7 +92,7 @@
             <h4>Гарантия на все выполненные работы 1 год</h4>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="advantages-item advantages-item--quality">
             <div class="advantages-item__img"></div>
             <p>...</p>
@@ -96,7 +100,7 @@
             <h4>Исключительно оригинальные запчасти от производителя</h4>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="advantages-item advantages-item--off">
             <div class="advantages-item__img"></div>
             <p>...</p>
@@ -104,7 +108,7 @@
             <h4>Мы являемся официальный дистрибьютор компании Zodiac</h4>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="advantages-item advantages-item--kval">
             <div class="advantages-item__img"></div>
             <p>...</p>
@@ -182,10 +186,13 @@
       <div class="row">
         <div class="col-md-6">
           <div class="about-text">
-            <p class="first-p">Z</p>
+            <p class="first-p">z</p>
             <p class="secont-p">odiac – это известная мировая компания, начавшая свою деятельность более ста лет назад в сфере аэронавтики, ныне занимающая лидирующее место </p>
             <p class="third-p">в сфере очистки воды.</p>
           </div>
+          <div class="about-text__mobile">
+              <p>Zodiac – это известная мировая компания, начавшая свою деятельность более ста лет назад в сфере аэронавтики, ныне занимающая лидирующее место в сфере очистки воды.</p>
+            </div>
           <p>ООО «Акванале» - является единственным официальным дистрибьютором продукции и запчастей компании «Zodiac pool Deutschland GmbH» на территории таможенного союза (России, Белоруссии, Казахстана), чью правовую деятельность подтверждают многочисленные сертификаты и отметка на официальном <a href="#">сайте Zodiac.</a></p>
           <p>Сотрудники ООО "Акванале" ежегодно проходят обучение в офисе компании Zodiac Pool Deutschland.</p>
         </div>
@@ -211,11 +218,11 @@
       </div>
       <form>
         <p class="form-title">Оставьте заявку, мы перезвоним Вам и ответим на все вопросы!</p>
-        <div class="input-container">
+        <div class="input-container input-container__mobile">
           <label>Как Вас зовут?</label>
           <input type="" name="" placeholder="Иван Иванович">
         </div>
-        <div class="input-container">
+        <div class="input-container input-container__mobile-last">
           <label>Ваш телефон</label>
           <input class="input-small" type="" name="" placeholder="+7">
           <input class="input-small" type="" name="" placeholder="495">
@@ -237,31 +244,7 @@
   </section>
 </main>
    
-   <div id="myModal" class="modal fade">
-       <div class="modal-dialog">
-           <div class="modal-content">
-               <form>
-                  <p class="form-title">Оставьте заявку, мы перезвоним Вам и ответим на все вопросы!</p>
-                  <div class="input-container">
-                    <label>Как Вас зовут?</label>
-                    <input type="" name="" placeholder="Иван Иванович">
-                  </div>
-                  <div class="input-container">
-                    <label>Ваш телефон</label>
-                    <input class="input-small" type="" name="" placeholder="+7">
-                    <input class="input-small" type="" name="" placeholder="495">
-                    <input class="input-medium" type="" name="" placeholder="1234567">
-                  </div>
-                  <div class="input-container input-container__last">
-                    <label>Электронная почта</label>
-                    <input type="" name="" placeholder="Info@mail.ru">
-                  </div>
-                  <a href="#" class="btn-blue">ПЕРЕЗВОНИТЬ МНЕ</a>
-                  <div class="btn-blue__after"></div>
-                </form>
-           </div>
-       </div>
-   </div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
