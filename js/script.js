@@ -17,12 +17,16 @@ $(document).ready(function(){
   });
 
 
-  $('.btn-play').click(function() {
+  $('.btn-play').on("click", function(){
     console.log('efds');
-    $('.video-player').toggleClass('show');
+    $('.video-player').css({
+      "opacity":"1", 
+      "z-index":100
+    });
+
+    $('.ytp-large-play-button').trigger('click');
     return false;
   });
-
 
 
 
