@@ -74,11 +74,11 @@ h1{
   margin-right: 138px;
 }
 .main-nav{
-    transition: all .2s ease-out .5s;
+    transition: all .2s ease;
 }
 .main-nav__list{
   list-style: none;
-  
+transition: all 0.2s ease;
 }
 .main-nav ul{
   transition: all 0.2s ease;
@@ -172,7 +172,7 @@ h1 span{
   width: 21px;
   height: 41px;
   margin: 0 auto;
-  top: 80%;
+  top: 70%;
   left: 580px;
 }
 /* PRESENT END*/
@@ -541,10 +541,15 @@ input{
   background-color: #1a6399;
   border-radius: 4px;
   margin: 0 auto;
-      cursor: pointer;
+  cursor: pointer;
+  transition: all .2s ease;
 }
 .btn-blue:hover{
-  color: white;}
+  background: #114870;
+  color: white;
+}
+
+
 .btn-blue__after{
   content: "";
   display: block;
@@ -592,12 +597,12 @@ input{
 .copyright{
   display: block;
   margin: 0 auto;
-  color: #222b30;
+  color: #42525b;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 100px;
-      text-align: center;
+  text-align: center;
 }
 /* feedback END*/
 
@@ -863,76 +868,123 @@ section{
 @media screen and (max-width: 700px){
   .about-bg {
     left: 0%;
-    width: 700px;
+    width: 690px;
   }
   .about {
     padding-bottom: 361px;
+  }
+  body, main{
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 650px){
   .about-bg {
     left: 0%;
-    width: 650px;
+    width: 635px;
+  }
+}
+
+@media screen and (max-width: 630px){
+  .about-bg {
+    left: -2%;
+  }
+}
+@media screen and (max-width: 610px){
+  .about-bg {
+    left: -3%;
   }
 }
 @media screen and (max-width: 600px){
   .about-bg {
-    left: 0%;
-    width: 600px;
+    left: -12%;
+    width: 727px;
+  }
+}
+@media screen and (max-width: 580px){
+  .about-bg {
+      left: -15%;
   }
 }
 @media screen and (max-width: 550px){
   .about-bg {
-    left: 0%;
-    width: 550px;
+    left: -18%;
   }
   .about {
-    padding-bottom: 285px;
+    padding-bottom: 369px
   }
 }
+@media screen and (max-width: 530px){
+  .about-bg {
+    left: -21%;
+  }
+}
+
+
 @media screen and (max-width: 500px){
   .about-bg {
-    left: 0%;
-    width: 500px;
+    left: -25%;
   }
   .about {
-    padding-bottom: 266px;
+    padding-bottom: 362px;
+  }
+}
+@media screen and (max-width: 475px){
+  .about-bg {
+    left: -30%;
   }
 }
 @media screen and (max-width: 450px){
   .about-bg {
-    left: 0%;
-    width: 450px;
+    left: -35%;
   }
-  .about {
-    padding-bottom: 225px;
+}
+@media screen and (max-width: 435px){
+  .about-bg {
+    left: -37%;
+  }
+}
+@media screen and (max-width: 425px){
+  .about-bg {
+    left: -40%;
+  }
+}
+@media screen and (max-width: 414px){
+  .about-bg {
+    left: -42%;
   }
 }
 @media screen and (max-width: 400px){
   .about-bg {
-    left: 0%;
-    width: 400px;
+    left: -45%;
   }
-  .about {
-    padding-bottom: 193px;
+}
+@media screen and (max-width: 375px){
+  .about-bg {
+    left: -52%;
+  }
+  .btn-blue{
+    width: 100%;
   }
 }
 @media screen and (max-width: 350px){
   .about-bg {
-    left: 0%;
-    width: 350px;
+    left: -61%;
   }
-  .about {
-    padding-bottom: 180px;
+}
+@media screen and (max-width: 320px){
+  .about-bg {
+    left: -71%;
   }
 }
 @media screen and (max-width: 300px){
   .about-bg {
-    left: 0%;
-    width: 300px;
+    left: -75%;
   }
-  .about {
-    padding-bottom: 150px;
+}
+@media screen and (max-width: 750px){
+  .about-container{
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 @media screen and (max-width: 720px){
@@ -993,7 +1045,7 @@ section{
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 501px){
   h1 {
     font-size: 44px;
   }
@@ -1006,7 +1058,31 @@ section{
   .services-item img{
     width: 100%;
   }
+  .present{
+    background: url(../img/first-block_bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 160px;
+  }
+  h1 {
+    margin-top: 240px;
+  }
+  .services-repairs .services-item__img, .services-spares .services-item__img, .services-tradein .services-item__img, .services-change .services-item__img, .services-recovery .services-item__img {
+    width: 57%;
+  }
 }
+
+
+@media screen and (max-width: 450px){
+  h1 {
+      margin-top: 266px;
+  }
+}
+
+
 @media screen and (max-width: 425px){
   .main-nav__item {
     margin-left: 10px;
@@ -1024,9 +1100,76 @@ section{
   }
 }
 @media screen and (max-width: 400px){
+  .main-logo img{
+    margin-bottom: 15px;
+  }
+  .header-page{
+    position: relative;
+  }
+  .present{
+    margin-top: 0px;
+    padding-top: 111px;
+  }
+  h1{
+    margin-top: 0px;
+  }
+  #hamburger-icon {
+    width: 77px;
+    height: 50px;
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+  #hamburger-icon .line {
+    display: block;
+    background: #307eff;
+    width: 75px;
+    height: 8px;
+    margin-bottom: 8px;
+    left: 0;
+    border-radius: 4px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  #hamburger-icon .line.line-1 {
+    top: 0;
+  }
+  #hamburger-icon .line.line-2 {
+    top: 50%;
+  }
+  #hamburger-icon .line.line-3 {
+    top: 100%;
+  }
+  #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+  }
+  #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+    transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+  }
+  #hamburger-icon.active .line-1 {
+    transform: translateY(25px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(25px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(25px) translateX(0) rotate(45deg);
+    position: relative;
+    top:-13px;
+  }
+  #hamburger-icon.active .line-2 {
+    opacity: 0;
+  }
+  #hamburger-icon.active .line-3 {
+    transform: translateY(-25px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-25px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-25px) translateX(0) rotate(-45deg);
+        position: relative;
+    top: 5px;
+  }
   .main-nav ul{
     opacity: 0;
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     z-index: 1000;
@@ -1034,6 +1177,7 @@ section{
   }
   .main-nav{
     position: relative;
+    display: none;
   }
   .main-nav.show ul{
     opacity: 1;
@@ -1046,6 +1190,7 @@ section{
   }
   .main-nav__item a{
     text-transform: uppercase;
+    color: white;
   }
   
   .header-page .header-page__logo{
@@ -1075,6 +1220,9 @@ section{
   }
   .services-item__number:after {
     left: 20%;
+  }
+  .services-spares .services-item__img{
+    left: 0px;
   }
 }
 

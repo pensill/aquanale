@@ -9,12 +9,13 @@ $(document).ready(function(){
   });
 
 
-  var hamburger = $('.mobile-menu__btn');
+  var hamburger = $('#hamburger-icon');
   hamburger.click(function() {
      hamburger.toggleClass('active');
      $('.main-nav').toggleClass('show');
      return false;
   });
+
 
 
   $('.btn-play').on("click", function(){
@@ -31,10 +32,13 @@ $(document).ready(function(){
 
 
 
-  setTimeout(function() {
+  window.onload = function() {
     $('body').css('height', "auto");
     $('section').css('display', "block");
-    $('.preloader').css('top', '-1000px');
-  }, 2000);
+    $('.preloader').css('top', '-3000px');
+  };
+
+
+
 
 });
